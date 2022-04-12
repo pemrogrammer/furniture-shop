@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import { useState } from 'react'
 
-const home: NextPage = () => {
-    const [word, setWord] = useState("Home");
+const Home: NextPage = () => {
+    const [word, setWord] = useState<string>("hello world");
 
 
     return (
@@ -12,4 +12,4 @@ const home: NextPage = () => {
     )
 }
 
-export default home
+export default Home

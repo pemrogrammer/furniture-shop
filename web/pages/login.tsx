@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 
-const login: NextPage = () => {
+const Login: NextPage = () => {
 
     return (
         <h1>Login</h1>
     )
 }
 
-export default login
+export default Login
