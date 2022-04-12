@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\projects\\furniture-shop\\services\\mobileService\\src\\logs\\debug\\.a7bbcfb01fb6e7b8695be47626f8a99f95d2087a-audit.json",
+    "files": [
+        {
+            "date": 1649747712860,
+            "name": "D:\\projects\\furniture-shop\\services\\mobileService\\src\\logs\\debug\\2022-04-12.log",
+            "hash": "436c76a18bedbe9a086347f48ade3a0c"
+        }
+    ],
+    "hashType": "md5"
+}
