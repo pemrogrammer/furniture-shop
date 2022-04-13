@@ -1,0 +1,3 @@
+[submodule "mobilee"]
+	path = mobilee
+	url = https://github.com/haidi20/furniture-shop-mobile.git
