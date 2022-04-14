@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, Button, Dimensions  } from 'react-native';
 import {
   LineChart,
   BarChart,
@@ -11,32 +11,52 @@ import {
 
 const HomeScreen = (props: any) => {
   const {navigation} = props;
-  
-  const style = StyleSheet.create({
-    container: {
-      flex: 1, 
-      alignItems: 'center', 
-      justifyContent: 'center',
-    },
-  });
 
-  const moveScreen = () => {
-    navigation.navigate('Item');
-  }
+  const linedata = {
+    labels: ['January', 'February', 'March', 'April'],
+    datasets: [
+      {
+        data: [20, 45, 28, 80],
+        strokeWidth: 2, // optional
+      },
+    ],
+  };
+
+  const style = StyleSheet.create({
+    titleChart: {
+      textAlign: "center",
+      paddingTop: 5,
+      paddingBottom: 5,
+      fontSize: 40,
+    }
+  });
   
   return (
-    <View>
-      <View style={style.container}>
-        <Text>Home Screen</Text>
-      </View>
-      <View>
-      <Button
-          title="move to item screen"
-          accessibilityLabel="increment"
-          onPress={moveScreen}
-          color="blue"
-        />
-      </View>
+    <View style={{padding: 5}}>
+      <Text style={style.titleChart}>
+        240
+      </Text>
+      <LineChart
+        data={linedata}
+        width={Dimensions.get('window').width - 10} // from react-native
+        height={220}
+        yAxisLabel={''}
+        chartConfig={{
+          backgroundColor: '#e26a00',
+          backgroundGradientFrom: '#fb8c00',
+          backgroundGradientTo: '#ffa726',
+          decimalPlaces: 0, // optional, defaults to 2dp
+          color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+          style: {
+            borderRadius: 16
+          }
+        }}
+        bezier
+        style={{
+          marginVertical: 8,
+          borderRadius: 16
+        }}
+      />
     </View>
   );
 }

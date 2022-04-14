@@ -14,7 +14,20 @@ function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen 
+            name="Home" 
+            options={{
+              title: "home",
+              headerStyle: {
+                backgroundColor: '#4a7bd0',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+              headerTitleAlign: "center",
+            }}
+            component={HomeScreen} />
           <Stack.Screen name="Item" component={ItemScreen} />
         </Stack.Navigator>
       </NavigationContainer>
