@@ -4,8 +4,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //screens
-import DashboardScreen from './src/screens/Dashboard';
-import ItemScreen from './src/screens/Item';
+import DashboardScreen from './src/screens/dashboard.screen';
+import ItemScreen from './src/screens/item.screen';
 
 const Stack = createNativeStackNavigator();
 
