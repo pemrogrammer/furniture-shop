@@ -4,7 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //screens
-import HomeScreen from './src/screens/Home';
+import DashboardScreen from './src/screens/Dashboard';
 import ItemScreen from './src/screens/Item';
 
 const Stack = createNativeStackNavigator();
@@ -15,9 +15,9 @@ function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen 
-            name="Home" 
+            name="Dashboard" 
             options={{
-              title: "home",
+              title: "Dashboard",
               headerStyle: {
                 backgroundColor: '#4a7bd0',
               },
@@ -27,7 +27,7 @@ function App() {
               },
               headerTitleAlign: "center",
             }}
-            component={HomeScreen} />
+            component={DashboardScreen} />
           <Stack.Screen name="Item" component={ItemScreen} />
         </Stack.Navigator>
       </NavigationContainer>
