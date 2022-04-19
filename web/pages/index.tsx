@@ -20,7 +20,7 @@ const Index = () : JSX.Element => {
       <section className="bg-gray-100 h-screen">
         <nav className="md:flex flex-wrap py-8 px-5 md:px-20 lg:px-60 hidden ">
           <div className="text-black text-2xl py-1">
-            FS
+            Furniture Shop
           </div>
           <div className="min-w-max flex-1 ">
             <div className="flex flex-row gap-10 justify-center place-items-center py-2 ">
