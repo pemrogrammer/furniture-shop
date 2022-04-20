@@ -16,15 +16,15 @@ const Products = (): JSX.Element => {
   const Product = ({srcImage, titleProduct} : tProduct):JSX.Element => {
 
     return (
-      <div className={`bg-white shadow-lg w-full text-center pb-10
-                        md:w-1/4 md:h-[55vh] md:rounded-xl ${styles.product} `}> 
+      <div className={`bg-white shadow-lg w-full text-center pb-10 mb-5
+                        md:w-1/4 md:h-[55vh] md:rounded-xl md:pb-0 md:mb-0 ${styles.product} `}> 
         <div className="flex flex-col items-center h-full w-full">
           <img src={srcImage} 
-            className={` shadow-2xl w-[0.5wh] rounded-b-xl
+            className={` shadow-lg w-[0.5wh] rounded-b-md rounded-t-sm
                         md:w-[20vw] md:h-[40vh] md:rounded-xl ${styles["image-product"]} `}
             alt="" 
             />
-            <div className="flex flex-col mt-[10%] px-10">
+            <div className="flex flex-col mt-[10%] px-5">
               <h1 className="font-bold text-2xl">{titleProduct}</h1>
               <p className="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -39,14 +39,14 @@ const Products = (): JSX.Element => {
     <>
       <section 
         id="products" 
-        className="bg-gray-100 w-full flex flex-col 
-                    md:h-screen">
-        <div className="w-full text-center mt-10">
+        className="bg-gray-100 w-full flex flex-col px-7
+                    md:h-[90vh] md:px-0 md:py-0">
+        <div className="w-full text-center my-10">
           <h1 className={` text-5xl ${styles.label} `}>Best Products</h1>
         </div>
-        <div className="flex flex-col justify-center place-items-center mt-[20%]
-                        md:gap-16 md:h-full md:flex-row md:mt-0 ">
-          <Product srcImage={linkCupboard} titleProduct="Cupboard" />
+        <div className="flex flex-col gap-10 justify-center items-center
+                        md:gap-16 md:flex-row md:mt-0 md:h-full ">
+          <Product srcImage={linkCupboard} titleProduct="Cupboard" /> 
           <Product srcImage={linkTable} titleProduct="Table" />
           <Product srcImage={linkChear} titleProduct="Chear" />
         </div>

@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 
 // components
-import Cover from '../components/SubLandingPage/cover';
-import Products from '../components/SubLandingPage/products';
+import Cover from 'components/SubLandingPage/cover';
+import AboutUs from 'components/SubLandingPage/aboutus';
+import Products from 'components/SubLandingPage/products';
 
 // styles
 import styles from "styles/index.module.scss";
@@ -15,11 +16,7 @@ const Index = () : JSX.Element => {
     <>
       <Cover styles={styles} linkImage={linkImage} />
       <Products />
-      {/* Company Profile */}
-      <section id="companyProfile" className="bg-red-300 w-full min-h-screen">
-        Company Profile
-      </section>
-      {/* End Company Profile */}
+      <AboutUs />
       {/* Contact Us */}
       <section id="contactUs" className="bg-green-300 w-full min-h-screen">
         Contact Us
