@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import Cover from 'components/SubLandingPage/cover';
 import AboutUs from 'components/SubLandingPage/aboutus';
 import Products from 'components/SubLandingPage/products';
+import ContactUs from 'components/SubLandingPage/contactus';
 
 // styles
 import styles from "styles/index.module.scss";
@@ -17,11 +18,7 @@ const Index = () : JSX.Element => {
       <Cover styles={styles} linkImage={linkImage} />
       <Products />
       <AboutUs />
-      {/* Contact Us */}
-      <section id="contactUs" className="bg-green-300 w-full min-h-screen">
-        Contact Us
-      </section>
-      {/* End Contact Us */}
+      <ContactUs />
     </>
   )
 }

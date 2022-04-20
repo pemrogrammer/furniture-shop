@@ -6,8 +6,6 @@ import styles from 'styles/products.module.scss';
 // type
 import { tProduct } from 'types/products.type';
 
-
-
 const Products = (): JSX.Element => {
   const [linkCupboard, setLinkCupboard] = useState<string>("https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80")
   const [linkTable, setLinkTable] = useState<string>("https://images.unsplash.com/photo-1593512828202-a5b036b628a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80")
@@ -42,7 +40,7 @@ const Products = (): JSX.Element => {
         className="bg-gray-100 w-full flex flex-col px-7
                     md:h-[90vh] md:px-0 md:py-0">
         <div className="w-full text-center my-10">
-          <h1 className={` text-5xl ${styles.label} `}>Best Products</h1>
+          <h1 className={` text-5xl ${styles.label} font-bold `}>Best Products</h1>
         </div>
         <div className="flex flex-col gap-10 justify-center items-center
                         md:gap-16 md:flex-row md:mt-0 md:h-full ">

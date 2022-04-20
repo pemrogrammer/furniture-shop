@@ -6,7 +6,7 @@ const AboutUs = (): JSX.Element => {
     <>
       <section 
         id="aboutUs" 
-        className=" bg-white flex flex-col gap-5 pt-10 w-full px-7 pb-10 text-center
+        className=" bg-white flex flex-col gap-5 py-10 w-full px-7 text-center
                     md:px-[10%] md:py-[5%] ">
         <h1 className=" text-5xl pb-5 text-center font-bold ">About Us</h1>
         {/* <p className="text-2xl md:text-6xl md:font-bold">Furnitur shop </p> */}
