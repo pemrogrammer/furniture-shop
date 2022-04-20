@@ -20,7 +20,8 @@ const Navbar = ({styles, linkImage}: tNavbar ): JSX.Element => {
                             md:block hidden">
               Furniture Shop
             </div>
-            <h1 className="text-black text-2xl py-1 font-bold">FS</h1>
+            <h1 className="text-black text-2xl py-1 font-bold
+                            md:hidden ">FS</h1>
             <div className="min-w-max flex-1 hidden
                             md:block ">
               <div className="flex flex-row gap-10 justify-end place-items-center py-2 ">

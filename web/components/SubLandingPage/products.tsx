@@ -16,12 +16,12 @@ const Products = (): JSX.Element => {
   const Product = ({srcImage, titleProduct} : tProduct):JSX.Element => {
 
     return (
-      <div className={`bg-white shadow-lg w-full text-center rounded-xl 
-                        md:w-1/4 md:h-[55vh] ${styles.product} `}> 
+      <div className={`bg-white shadow-lg w-full text-center pb-10
+                        md:w-1/4 md:h-[55vh] md:rounded-xl ${styles.product} `}> 
         <div className="flex flex-col items-center h-full w-full">
           <img src={srcImage} 
-            className={` shadow-2xl rounded-xl w-10 
-                        md:w-[20vw] md:h-[40vh] ${styles["image-product"]} `}
+            className={` shadow-2xl w-[0.5wh] rounded-b-xl
+                        md:w-[20vw] md:h-[40vh] md:rounded-xl ${styles["image-product"]} `}
             alt="" 
             />
             <div className="flex flex-col mt-[10%] px-10">
@@ -44,8 +44,8 @@ const Products = (): JSX.Element => {
         <div className="w-full text-center mt-10">
           <h1 className={` text-5xl ${styles.label} `}>Best Products</h1>
         </div>
-        <div className="flex md:flex-row flex-col justify-center place-items-center
-                        md:gap-16 md:h-full ">
+        <div className="flex flex-col justify-center place-items-center mt-[20%]
+                        md:gap-16 md:h-full md:flex-row md:mt-0 ">
           <Product srcImage={linkCupboard} titleProduct="Cupboard" />
           <Product srcImage={linkTable} titleProduct="Table" />
           <Product srcImage={linkChear} titleProduct="Chear" />
