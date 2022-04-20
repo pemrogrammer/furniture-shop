@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .navbar {
+        .item-menu {
+            @apply hover:text-gray-500;
+        }
+    }
+}
+
 html {
   scroll-behavior: smooth;
 }

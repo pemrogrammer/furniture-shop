@@ -17,14 +17,23 @@
 
 // next.config.js
 /** @type {import('next').NextConfig} */
+const path = require('path');
+
 module.exports = {
     reactStrictMode: true,
-    // experimental: {
+    experimental: {
+        // Enables the styled-components SWC transform
+        styledComponents: true
+    },
+    // compiler: {
     //     // Enables the styled-components SWC transform
     //     styledComponents: true
     // },
     images: {
         domains: ['images.unsplash.com'],
+    },
+    sassOptions: {
+        includePaths: [path.join(__dirname, 'styles')],
     },
     // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     //     // Filter out default Next.js CSS rules:

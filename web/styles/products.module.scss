@@ -1,0 +1,22 @@
+@keyframes fadeOut {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.label {
+    animation: fadeOut 5s;
+}
+
+.product {
+    animation: fadeOut 5s;
+}
+
+@media only screen and (min-width: 768px) {
+    .image-product {
+        margin-top: -100px;
+    }
+}
